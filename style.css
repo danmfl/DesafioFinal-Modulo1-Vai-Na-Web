@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: #252525;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.logotipo {
+    height: 60%;
+}
+
+.cabecalho__icones {
+    display: flex;
+    width: 12%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secao {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.secaoprincipal {
+    height: 92vh;
+    background-image: url(./assets/web/akita.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 8%;
+}
+
+.secaoprincipal__div {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 1px solid red;*/
+}
+
+.secaoprincipal__texto {
+    width: 486px;
+    text-align: center;
+    font-family: 'Roboto Serif';
+    font-size: 51px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.secaoprincipal__imagem {
+    width: 125px;
+}
+
+.secao__div {
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.secao__titulo {
+    font-family: 'Roboto Serif';
+    font-weight: bold;
+    font-size: 49px;
+}
+
+.secao__texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    color: #3A342F;
+    line-height: 35px;
+}
+
+.secao__botao {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 20px 30px;
+    border-radius: 44px;
+    margin-top: 15px;
+    width: 230px;
+    text-align: center;
+}
+
+.secao2 {
+    background-image: url(./assets/web/pitbull.png);
+    padding-top: 18%;
+    padding-left: 7%;
+}
+
+.secao2__div{
+    width: 430px;
+    height: 400px;
+    /*border: 1px red solid;*/
+}
+
+.secao2__titulo {
+    color: #3A342F;
+    /*border: 1px red solid;*/
+}
+
+.secao2__texto {
+    width: 90%;
+    /*border: 1px red solid;*/
+}
+
+.secao2__botao {
+    color: #F4F2F3;
+    background-color: #3A342F;
+    /*border: 1px red solid;*/
+}
+
+.secao3 {
+    background-image: url(./assets/web/pinscher.png);
+    padding-top: 15%;
+    padding-left: 50%;
+}
+
+.secao3__div {
+    width: 424px;
+    height: 460px;
+}
+
+.secao3__titulo {
+    color: #FFFFFF;
+}
+
+.secao3__texto {
+    color: #FFFFFF;
+}
+
+.secao3__botao {
+    color: #3A342F;
+    background-color: #FFFFFF;
+}
+
+.patrocinadores {
+    height: 15vh;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.patrocinadores__texto {
+    font-family: 'Roboto Serif';
+    font-size: 24px;
+    font-style: italic;
+    color: #FD6A9A;
+}
+
+.rodape {
+    display: flex;
+    height:40vh;
+    padding: 4% 10%;
+    background-color: #EB4A7B;
+
+}
+
+.rodape__redes {
+    display: none;
+}
+
+.rodape__navegacao {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-right: 8vw;
+
+}
+
+.rodape__navegacao__titulo {
+    font-family: 'roboto serif';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.rodape__navegacao__lista {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    list-style: none;
+    line-height: 30px;
+}
+
+@media (max-width: 480px) {
+
+    .cabecalho {
+        height: 15vh;
+    }
+
+    .logotipo {
+        height: 50px;
+    }
+
+    .instagram {
+        display: none;
+    }
+
+    .youtube {
+        display: none;
+    }
+
+    .whatsapp img{
+        height: 40px;
+    }
+
+    .secaoprincipal{
+        background-image: url(./assets/mobile/akita.png);
+    }
+    
+    .secaoprincipal__texto {
+        font-size: 36px;
+        width: 100vw;
+    }
+
+    .secao__titulo{
+        font-size: 24px;
+    }
+
+    .secao__texto {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .secao__botao {
+        font-size: 14px;
+        padding: 10px 6px;
+        margin-top: 5px;
+        width: 110px;
+    }
+
+    .secao2 {
+        background-image: url(./assets/mobile/pitbull.png);
+    }
+
+    .secao2__div, .secao3__div {
+        width: 280px;
+        height: 220px;
+    }
+
+    .secao3 {
+        background-image: url(./assets/mobile/pinscher.png);
+        padding-top: 18%;
+        padding-left: 7%;
+    }
+
+    .patrocinadores {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .patrocinadores__texto {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .patrocinadores img {
+       width: 25vw;
+    }
+   
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .rodape__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape__logotipo {
+        width: 50vw;
+    }
+
+    .rodape__icones {
+        display: flex;
+        padding: 15px; 
+        width: 40vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rodape__icones a img {
+        width: 24px;
+    }
+
+    .rodape__navegacao {
+        margin: 0;
+        text-align: center;
+    }
+
+    .rodape__navegacao__titulo {
+        font-size: 16px;
+    }
+
+    .rodape__navegacao__lista {
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
